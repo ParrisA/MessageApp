@@ -4,6 +4,10 @@
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
 #
+
+# to start postgres manually:
+# "C:\Program Files\PostgreSQL\9.4\bin\postgres" -D "../pg_data"
+
 default: &default
   adapter: postgresql
   pool: 5
@@ -12,8 +16,9 @@ default: &default
 development:
   <<: *default
   database: messenger_db_dev
-  username: postgres
-  password: P@ssW0rd1
+  username: parris
+  password: password
+  encoding: WIN1252
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -21,8 +26,9 @@ development:
 test:
   <<: *default
   database: messenger_db_test
-  username: postgres
-  password: P@ssW0rd1
+  username: parris
+  password: password
+  encoding: WIN1252
 
 production:
   <<: *default
