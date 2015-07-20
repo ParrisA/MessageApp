@@ -3,10 +3,10 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   before_filter :update_sanitized_params, if: :devise_controller?
   	def update_sanitized_params
-  		devise_parameter_sanitizer.for(:sign_up){ |up| u.permit(:first_name, :last_name, :password, :password_confirmation, :email)}
+  		devise_parameter_sanitizer.for(:sign_up){ |u| u.permit(:first_name, :last_name, :password, :password_confirmation, :email)}
   	end
-  	def after_sign_in_path_for(user)
-  		users_path
-  	end
+#  	def after_sign_in_path_for(user)
+#  		users_path
+#  	end
   protect_from_forgery with: :exception
 end

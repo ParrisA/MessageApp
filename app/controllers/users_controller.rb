@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
-
+  before_action :myself_only, only: [:edit, :update, :destroy]
   # GET /users
   # GET /users.json
   def index
@@ -70,5 +70,13 @@ class UsersController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
       params.require(:user).permit(:first_name, :last_name)
+    end
+
+
+    def myself_only
+      unless @user == current_user
+        flash[:alert] = "You don't have permission to do that"
+        redirect_to :back
+      end
     end
 end
