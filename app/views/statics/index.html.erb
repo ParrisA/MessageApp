@@ -10,7 +10,7 @@
        <%= button_to "Sign out", destroy_user_session_path, method: :delete, class: "navbar-btn" %>
       <%else%>
         <%= button_to "Register", new_user_registration_path, method: :get, class: "navbar-btn" %> 
-        <%= button_to "Login", new_user_session_path, method: :get, class: "navbar-btn"%>
+        <%= button_to "Login", new_user_session_path, class: "navbar-btn"%>
       <%end%>
     </div>
   </nav>
