@@ -3,18 +3,27 @@
   <head>
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   </head>
+  <img class="giant-background-image" src="assets/colorful-triangles-background_yB0qTG6.jpg" alt="Grey Background">
   <p id="notice"><%= notice %></p>
-  <nav class="navbar navbar-default">
-    <div class="container text-right">
-      <% if signed_in? %>
-       <%= button_to "Sign out", destroy_user_session_path, method: :delete, class: "navbar-btn" %>
-      <%else%>
-        <%= button_to "Register", new_user_registration_path, method: :get, class: "navbar-btn" %> 
-        <%= button_to "Login", new_user_session_path, class: "navbar-btn"%>
-      <%end%>
-    </div>
+  <nav class="navbar navbar-default navbar-fixed-top navbar-right material-design-nav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Parris Messages</a>
+        <ul class="nav navbar-nav">
+          <% if signed_in? %>
+            <li>
+            <%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "navbar-btn" %>
+            </li>
+          <%else%>
+            <li>
+            <%= link_to "Register", new_user_registration_path, method: :get, class: "navbar-btn" %>
+            </li>
+            <li> 
+            <%= link_to "Login", new_user_session_path, class: "navbar-btn"%>
+            </li>
+          <%end%>
+        </ul>
+      </div>
   </nav>
-
   <table>
     <thead>
       <tr>
@@ -34,4 +43,22 @@
   </table>
 
   <br>
+<style type = "text/css">
+  .header{
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
+  }
+  .material-design-nav{
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px rgba(232, 232, 232, 0.55);
+  }
+
+  .giant-background-image{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+</style>
 </html>

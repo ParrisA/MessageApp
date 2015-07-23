@@ -1,0 +1,102 @@
+2015-07-20T03:39:51.940468+00:00 heroku[web.1]: State changed from up to starting
+2015-07-20T03:39:51.925553+00:00 heroku[slug-compiler]: Slug compilation started
+2015-07-20T03:39:54.411376+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2015-07-20T03:39:54.747111+00:00 heroku[web.1]: Starting process with command `bin/rails server -p 40125 -e production`
+2015-07-20T03:39:54.994092+00:00 app[web.1]: [2015-07-20 03:39:54] FATAL SignalException: SIGTERM
+2015-07-20T03:39:54.994097+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `select'
+2015-07-20T03:39:54.994099+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `block in start'
+2015-07-20T03:39:54.994100+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:32:in `start'
+2015-07-20T03:39:54.994102+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:160:in `start'
+2015-07-20T03:39:54.994103+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:34:in `run'
+2015-07-20T03:39:54.994107+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/server.rb:80:in `start'
+2015-07-20T03:39:54.994105+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.6.4/lib/rack/server.rb:286:in `start'
+2015-07-20T03:39:54.994110+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/commands_tasks.rb:75:in `tap'
+2015-07-20T03:39:54.994108+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/commands_tasks.rb:80:in `block in server'
+2015-07-20T03:39:54.994111+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/commands_tasks.rb:75:in `server'
+2015-07-20T03:39:54.994113+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+2015-07-20T03:39:54.994114+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands.rb:17:in `<top (required)>'
+2015-07-20T03:39:54.994116+00:00 app[web.1]: 	bin/rails:4:in `require'
+2015-07-20T03:39:54.994117+00:00 app[web.1]: 	bin/rails:4:in `<main>'
+2015-07-20T03:39:54.994125+00:00 app[web.1]: [2015-07-20 03:39:54] INFO  going to shutdown ...
+2015-07-20T03:39:54.994159+00:00 app[web.1]: [2015-07-20 03:39:54] INFO  WEBrick::HTTPServer#start done.
+2015-07-20T03:39:55.041418+00:00 app[web.1]: => Rails 4.2.3 application starting in production on http://0.0.0.0:19905
+2015-07-20T03:39:55.041410+00:00 app[web.1]: => Booting WEBrick
+2015-07-20T03:39:55.041420+00:00 app[web.1]: => Run `rails server -h` for more startup options
+2015-07-20T03:39:55.041421+00:00 app[web.1]: => Ctrl-C to shutdown server
+2015-07-20T03:39:55.041423+00:00 app[web.1]: Exiting
+2015-07-20T03:39:55.882127+00:00 heroku[web.1]: Process exited with status 143
+2015-07-20T03:39:58.967894+00:00 app[web.1]: [2015-07-20 03:39:58] INFO  WEBrick 1.3.1
+2015-07-20T03:39:58.968243+00:00 app[web.1]: [2015-07-20 03:39:58] INFO  WEBrick::HTTPServer#start: pid=3 port=40125
+2015-07-20T03:39:58.967929+00:00 app[web.1]: [2015-07-20 03:39:58] INFO  ruby 2.0.0 (2015-04-13) [x86_64-linux]
+2015-07-20T03:39:59.560526+00:00 heroku[web.1]: State changed from starting to up
+2015-07-20T03:40:21.428266+00:00 heroku[router]: at=info method=GET path="/" host=parrismessages.herokuapp.com request_id=2bbc68f9-0957-47bb-b492-5901da36dd78 fwd="128.237.160.223" dyno=web.1 connect=6ms service=132ms status=200 bytes=2059
+2015-07-20T03:40:21.501814+00:00 heroku[router]: at=info method=GET path="/assets/application-7ac2b6eea6db513108e2c192adbe5c51b8bbf8b722dbef12b41922c23cd72aef.js" host=parrismessages.herokuapp.com request_id=ac1ff15b-d573-47b7-91b7-02d5068e0570 fwd="128.237.160.223" dyno=web.1 connect=1ms service=28ms status=200 bytes=328733
+2015-07-20T03:40:21.479791+00:00 heroku[router]: at=info method=GET path="/assets/application-695d9aaee6cfb4f3a432a22591ac4eb2e6b2ae1f80492d99fcb8205a87123fa4.css" host=parrismessages.herokuapp.com request_id=0a38b2e4-93be-4f61-9de6-1ce58c6592ac fwd="128.237.160.223" dyno=web.1 connect=2ms service=5ms status=200 bytes=2779
+2015-07-20T03:40:23.364120+00:00 heroku[router]: at=info method=GET path="/users/sign_up" host=parrismessages.herokuapp.com request_id=5d90bf73-c4eb-491c-a58c-f57f54d5d995 fwd="128.237.160.223" dyno=web.1 connect=12ms service=165ms status=200 bytes=2863
+2015-07-20T03:43:25.249907+00:00 heroku[router]: at=info method=POST path="/users" host=parrismessages.herokuapp.com request_id=c1528de0-a4f7-4f4f-87c1-92cb94a70212 fwd="128.237.160.223" dyno=web.1 connect=1ms service=425ms status=500 bytes=1754
+2015-07-20T03:43:29.451096+00:00 heroku[router]: at=info method=POST path="/users" host=parrismessages.herokuapp.com request_id=37f3314c-4e9a-42d5-acb8-2db04a1683d9 fwd="128.237.160.223" dyno=web.1 connect=1ms service=122ms status=500 bytes=1754
+2015-07-20T03:43:30.012742+00:00 heroku[router]: at=info method=POST path="/users" host=parrismessages.herokuapp.com request_id=325b6a5d-9b99-4cb9-aeb8-666c32497a24 fwd="128.237.160.223" dyno=web.1 connect=1ms service=119ms status=500 bytes=1754
+2015-07-20T03:43:30.489716+00:00 heroku[router]: at=info method=POST path="/users" host=parrismessages.herokuapp.com request_id=78c534c5-162a-49eb-be7e-41b06379c188 fwd="128.237.160.223" dyno=web.1 connect=2ms service=123ms status=500 bytes=1754
+2015-07-20T03:43:30.866927+00:00 heroku[router]: at=info method=POST path="/users" host=parrismessages.herokuapp.com request_id=0adc4798-48bf-4f8e-93a0-0f0b16d73c2b fwd="128.237.160.223" dyno=web.1 connect=1ms service=123ms status=500 bytes=1754
+2015-07-20T03:43:31.317657+00:00 heroku[router]: at=info method=POST path="/users" host=parrismessages.herokuapp.com request_id=efc0d004-81f7-4489-9767-c9de3701a2e6 fwd="128.237.160.223" dyno=web.1 connect=0ms service=125ms status=500 bytes=1754
+2015-07-20T03:43:31.739893+00:00 heroku[router]: at=info method=POST path="/users" host=parrismessages.herokuapp.com request_id=77f6daf5-4323-46ee-959d-fe133532dc17 fwd="128.237.160.223" dyno=web.1 connect=2ms service=119ms status=500 bytes=1754
+2015-07-20T03:43:32.222088+00:00 heroku[router]: at=info method=POST path="/users" host=parrismessages.herokuapp.com request_id=4d865b93-88c6-42ec-a320-3c2d3cf5ef58 fwd="128.237.160.223" dyno=web.1 connect=0ms service=189ms status=500 bytes=1754
+2015-07-20T03:43:32.562852+00:00 heroku[router]: at=info method=POST path="/users" host=parrismessages.herokuapp.com request_id=4b557a0c-21ba-4c53-8de3-578abf8926bc fwd="128.237.160.223" dyno=web.1 connect=0ms service=123ms status=500 bytes=1754
+2015-07-20T03:43:33.573787+00:00 heroku[router]: at=info method=POST path="/users" host=parrismessages.herokuapp.com request_id=8dd17469-9c9c-4f60-bf09-fcaea97b8ad7 fwd="128.237.160.223" dyno=web.1 connect=1ms service=123ms status=500 bytes=1754
+2015-07-20T03:48:30.415298+00:00 heroku[router]: at=info method=GET path="/users/sign_up" host=parrismessages.herokuapp.com request_id=2abcd1da-8ee3-4836-bf26-6f9bf7967a8c fwd="128.237.160.223" dyno=web.1 connect=1ms service=21ms status=200 bytes=2863
+2015-07-20T03:48:30.461740+00:00 heroku[router]: at=info method=GET path="/assets/application-7ac2b6eea6db513108e2c192adbe5c51b8bbf8b722dbef12b41922c23cd72aef.js" host=parrismessages.herokuapp.com request_id=b33708eb-364f-4ada-958f-b08f8f97f117 fwd="128.237.160.223" dyno=web.1 connect=1ms service=4ms status=304 bytes=133
+2015-07-20T03:48:30.457371+00:00 heroku[router]: at=info method=GET path="/assets/application-695d9aaee6cfb4f3a432a22591ac4eb2e6b2ae1f80492d99fcb8205a87123fa4.css" host=parrismessages.herokuapp.com request_id=68bf54cb-4125-4274-9bd7-8445faa3639f fwd="128.237.160.223" dyno=web.1 connect=0ms service=3ms status=304 bytes=133
+2015-07-20T03:48:35.042097+00:00 heroku[router]: at=info method=GET path="/users/confirmation/new" host=parrismessages.herokuapp.com request_id=76a63bcb-8a92-48ce-8b64-427c3102c855 fwd="128.237.160.223" dyno=web.1 connect=0ms service=20ms status=200 bytes=2181
+2015-07-20T03:48:38.440526+00:00 heroku[router]: at=info method=GET path="/users/sign_up" host=parrismessages.herokuapp.com request_id=982c934f-9e55-4b72-ac42-ebbe5f1d6d23 fwd="128.237.160.223" dyno=web.1 connect=0ms service=12ms status=200 bytes=2863
+2015-07-20T03:48:39.803553+00:00 heroku[router]: at=info method=GET path="/users/sign_in" host=parrismessages.herokuapp.com request_id=084c9018-a150-4d18-93a9-77a4bea6a74d fwd="128.237.160.223" dyno=web.1 connect=0ms service=16ms status=200 bytes=2582
+2015-07-20T03:49:14.024302+00:00 heroku[router]: at=info method=POST path="/users/sign_in" host=parrismessages.herokuapp.com request_id=0d00d3ae-e876-44de-b7ae-d75e6dcaafbd fwd="128.237.160.223" dyno=web.1 connect=0ms service=118ms status=200 bytes=2772
+2015-07-20T03:49:18.345489+00:00 heroku[router]: at=info method=GET path="/users/sign_up" host=parrismessages.herokuapp.com request_id=832b7053-60a4-4109-8150-5272b9063e35 fwd="128.237.160.223" dyno=web.1 connect=0ms service=13ms status=200 bytes=2995
+2015-07-20T03:49:31.403260+00:00 heroku[router]: at=info method=GET path="/users/confirmation/new" host=parrismessages.herokuapp.com request_id=e16a9315-8a3d-48a1-bb85-682ca88bd7c8 fwd="128.237.160.223" dyno=web.1 connect=0ms service=10ms status=200 bytes=2313
+2015-07-20T03:49:34.153458+00:00 heroku[router]: at=info method=GET path="/users/sign_in" host=parrismessages.herokuapp.com request_id=618646e5-334c-41da-b302-022033177ad3 fwd="128.237.160.223" dyno=web.1 connect=2ms service=22ms status=200 bytes=2714
+2015-07-20T03:49:43.166644+00:00 heroku[router]: at=info method=GET path="/assets/application-695d9aaee6cfb4f3a432a22591ac4eb2e6b2ae1f80492d99fcb8205a87123fa4.css" host=parrismessages.herokuapp.com request_id=580af61e-83bb-4914-91b6-180bcaf91b69 fwd="128.237.160.223" dyno=web.1 connect=0ms service=3ms status=304 bytes=133
+2015-07-20T03:49:43.130565+00:00 heroku[router]: at=info method=POST path="/users/sign_in" host=parrismessages.herokuapp.com request_id=b8277e26-25e9-423a-af5f-6fb0db310ada fwd="128.237.160.223" dyno=web.1 connect=0ms service=131ms status=200 bytes=2772
+2015-07-20T03:49:43.190089+00:00 heroku[router]: at=info method=GET path="/assets/application-7ac2b6eea6db513108e2c192adbe5c51b8bbf8b722dbef12b41922c23cd72aef.js" host=parrismessages.herokuapp.com request_id=1d6855a4-bb2c-416c-8612-f305dbbb9563 fwd="128.237.160.223" dyno=web.1 connect=3ms service=6ms status=304 bytes=133
+2015-07-20T03:49:51.787229+00:00 heroku[router]: at=info method=GET path="/users/password/new" host=parrismessages.herokuapp.com request_id=bcccbad6-7784-417d-9732-ae55e1175a5f fwd="128.237.160.223" dyno=web.1 connect=0ms service=16ms status=200 bytes=2328
+2015-07-20T03:51:56.040372+00:00 heroku[slug-compiler]: Slug compilation started
+2015-07-20T03:51:56.040391+00:00 heroku[slug-compiler]: Slug compilation finished
+2015-07-20T03:51:55.984358+00:00 heroku[api]: Deploy 96ead90 by parris223344@gmail.com
+2015-07-20T03:51:55.984358+00:00 heroku[api]: Release v21 created by parris223344@gmail.com
+2015-07-20T03:51:56.131320+00:00 heroku[web.1]: State changed from up to starting
+2015-07-20T03:51:58.895793+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2015-07-20T03:51:59.599511+00:00 app[web.1]: [2015-07-20 03:51:59] FATAL SignalException: SIGTERM
+2015-07-20T03:51:59.599516+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `select'
+2015-07-20T03:51:59.599519+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `block in start'
+2015-07-20T03:51:59.599520+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:32:in `start'
+2015-07-20T03:51:59.599522+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:160:in `start'
+2015-07-20T03:51:59.599550+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:34:in `run'
+2015-07-20T03:51:59.599552+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.6.4/lib/rack/server.rb:286:in `start'
+2015-07-20T03:51:59.599554+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/server.rb:80:in `start'
+2015-07-20T03:51:59.599555+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/commands_tasks.rb:80:in `block in server'
+2015-07-20T03:51:59.599557+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/commands_tasks.rb:75:in `tap'
+2015-07-20T03:51:59.599558+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/commands_tasks.rb:75:in `server'
+2015-07-20T03:51:59.599561+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands.rb:17:in `<top (required)>'
+2015-07-20T03:51:59.599560+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.3/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+2015-07-20T03:51:59.599563+00:00 app[web.1]: 	bin/rails:4:in `require'
+2015-07-20T03:51:59.599564+00:00 app[web.1]: 	bin/rails:4:in `<main>'
+2015-07-20T03:51:59.599571+00:00 app[web.1]: [2015-07-20 03:51:59] INFO  going to shutdown ...
+2015-07-20T03:51:59.635075+00:00 app[web.1]: => Booting WEBrick
+2015-07-20T03:51:59.599572+00:00 app[web.1]: [2015-07-20 03:51:59] INFO  WEBrick::HTTPServer#start done.
+2015-07-20T03:51:59.635079+00:00 app[web.1]: => Rails 4.2.3 application starting in production on http://0.0.0.0:40125
+2015-07-20T03:51:59.635081+00:00 app[web.1]: => Run `rails server -h` for more startup options
+2015-07-20T03:51:59.635083+00:00 app[web.1]: => Ctrl-C to shutdown server
+2015-07-20T03:51:59.635085+00:00 app[web.1]: Exiting
+2015-07-20T03:51:59.898390+00:00 heroku[web.1]: Starting process with command `bin/rails server -p 22658 -e production`
+2015-07-20T03:52:04.174260+00:00 heroku[web.1]: Process exited with status 143
+2015-07-20T03:52:04.650777+00:00 app[web.1]: [2015-07-20 03:52:04] INFO  WEBrick 1.3.1
+2015-07-20T03:52:04.650814+00:00 app[web.1]: [2015-07-20 03:52:04] INFO  ruby 2.0.0 (2015-04-13) [x86_64-linux]
+2015-07-20T03:52:04.651167+00:00 app[web.1]: [2015-07-20 03:52:04] INFO  WEBrick::HTTPServer#start: pid=3 port=22658
+2015-07-20T03:52:05.085777+00:00 heroku[web.1]: State changed from starting to up
+2015-07-20T03:53:16.465708+00:00 heroku[router]: at=info method=GET path="/assets/application-7ac2b6eea6db513108e2c192adbe5c51b8bbf8b722dbef12b41922c23cd72aef.js" host=parrismessages.herokuapp.com request_id=98ad68eb-dab7-4263-ba02-12963e143f01 fwd="128.237.160.223" dyno=web.1 connect=1ms service=26ms status=200 bytes=328733
+2015-07-20T03:53:16.392836+00:00 heroku[router]: at=info method=GET path="/" host=parrismessages.herokuapp.com request_id=9801a6fd-d2d3-4b0b-a750-b2f6cf8de9b2 fwd="128.237.160.223" dyno=web.1 connect=2ms service=129ms status=200 bytes=2206
+2015-07-20T03:53:16.447642+00:00 heroku[router]: at=info method=GET path="/assets/application-695d9aaee6cfb4f3a432a22591ac4eb2e6b2ae1f80492d99fcb8205a87123fa4.css" host=parrismessages.herokuapp.com request_id=e42d01df-cf7a-4336-9db3-630cec6ccd0e fwd="128.237.160.223" dyno=web.1 connect=4ms service=18ms status=200 bytes=2779
+2015-07-20T03:53:53.270966+00:00 heroku[router]: at=info method=GET path="/users/sign_up" host=parrismessages.herokuapp.com request_id=6098ebde-0b78-4b66-8790-13fafbdb3323 fwd="128.237.160.223" dyno=web.1 connect=3ms service=130ms status=200 bytes=2863
+2015-07-20T03:53:53.323585+00:00 heroku[router]: at=info method=GET path="/assets/application-7ac2b6eea6db513108e2c192adbe5c51b8bbf
+8b722dbef12b41922c23cd72aef.js" host=parrismessages.herokuapp.com request_id=62aa86c9-4fbb-4da5-85e3-7a3af16b5766 fwd="128.237.160.223" dyno=web.1 connect=2ms service=6ms status=304 bytes=133
+2015-07-20T03:53:53.322529+00:00 heroku[router]: at=info method=GET path="/assets/application-695d9aaee6cfb4f3a432a22591ac4eb2e6b2ae1f80492d99fcb8205a87123fa4.css" host=parrismessages.herokuapp.com request_id=c1740879-a918-4ed4-9c46-9a9584b11b3a fwd="128.237.160.223" dyno=web.1 connect=3ms service=7ms status=304 bytes=133
+2015-07-20T03:54:33.667106+00:00 heroku[router]: at=info method=POST path="/users" host=parrismessages.herokuapp.com request_id=0ce7c3f2-9280-4a4b-b47e-3c5314d9af86 fwd="128.237.160.223" dyno=web.1 connect=2ms service=458ms status=500 bytes=1754
+2015-07-20T03:55:05.062848+00:00 heroku[router]: at=info method=POST path="/users" host=parrismessages.herokuapp.com request_id=12722c51-4fa1-4555-9ca2-5db211b545a7 fwd="128.237.160.223" dyno=web.1 connect=9ms service=169ms status=500 bytes=1754
