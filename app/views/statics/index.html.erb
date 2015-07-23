@@ -11,17 +11,17 @@
         <ul class="nav navbar-nav">
           <% if signed_in? %>
             <li>
-            <%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "navbar-btn" %>
+            <%= link_to "Sign out", destroy_user_session_path, method: :delete%>
             </li>
             <li>
             <%= link_to 'Delete Account', @user, confirm: 'Are you sure?', method: :delete %>
             </li>
           <%else%>
             <li>
-            <%= link_to "Register", new_user_registration_path, method: :get, class: "navbar-btn" %>
+            <%= link_to "Register", new_user_registration_path, method: :get%>
             </li>
             <li> 
-            <%= link_to "Login", new_user_session_path, class: "navbar-btn"%>
+            <%= link_to "Login", new_user_session_path%>
             </li>
           <%end%>
         </ul>
