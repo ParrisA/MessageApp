@@ -16,6 +16,14 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
+.messages {
+	max-height: 400px;
+	overflow-y: auto;
+	margin-bottom: 1em;
+	margin-top: 1em;
+}
+
 .above{
 	position: absolute;
 }
@@ -34,6 +42,10 @@
   background-color: white;
   box-shadow: 2px 2px 2px 2px rgba(232, 232, 232, 0.55);
 }
+
+.notice{
+	color: white;
+}
 .giant-background-image{
   width: 100%;
   height: auto;
@@ -43,15 +55,18 @@
 .navbar-inner {
   background:transparent;
 }
-a:link { 
-color: #FFFFFF;
-}
-a:visited { 
-  color: #FFFFFF;
-}
-a:hover { 
-  color: #CCCCCC;
-}
-a:active { 
-  color: #333333;
+
+.index-link{
+	&:link { 
+	color: #FFFFFF;
+	}
+	&:visited { 
+	  color: #FFFFFF;
+	}
+	&:hover { 
+	  color: #CCCCCC;
+	}
+	&:active { 
+	  color: #333333;
+	}
 }

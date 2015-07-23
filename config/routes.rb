@@ -1,8 +1,16 @@
 Rails.application.routes.draw do
+
+  resources :messages, only: [:new, :create]
+  match "/my_new_page_url", to: "statics#my_new_page_url", via: :get
   devise_for :users
   resources :statics
   resources :users
-  # The priority is based upon order of creation: first created -> highest priority.
+  resources :conversations, only: [:index, :show, :destroy] do
+    member do
+      post :reply
+    end
+  end
+  # The priority is based upon order of creation: first created -> highest priority
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "rpoot"

@@ -5,29 +5,30 @@
   </head>
   <%= image_tag "colorful-triangles-background_yB0qTG6.jpg", class: "giant-background-image"%>
   <div class="above">
-    <p id="notice"><%= notice %></p>
     <nav class="navbar navbar-fixed-top navbar-transparent">
       <div class="container-fluid">
         <a class="navbar-brand" href="/">Parris Messages</a>
           <ul class="nav navbar-nav">
             <% if signed_in? %>
               <li>
-              <%= link_to "Sign out", destroy_user_session_path, method: :delete%>
+              <%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "index-link"%>
               </li>
+              <li><%= link_to 'Your Conversations', conversations_path, class: "index-link" %></li>
               <li>
-              <%= link_to 'Delete Account', @user, confirm: 'Are you sure?', method: :delete %>
+              <%= link_to 'Delete Account', user_registration_path, :confirm => 'Are you sure you want to destroy your account?', :method => :delete, class: "index-link" %>
               </li>
             <%else%>
               <li>
-              <%= link_to "Register", new_user_registration_path, method: :get%>
+              <%= link_to "Register", new_user_registration_path, method: :get, class: "index-link"%>
               </li>
               <li> 
-              <%= link_to "Login", new_user_session_path%>
+              <%= link_to "Login", new_user_session_path, class: "index-link"%>
               </li>
             <%end%>
           </ul>
         </div>
     </nav>
+    <p id="notice" class="notice"><%= notice %></p>
     <table>
       <thead>
         <tr>

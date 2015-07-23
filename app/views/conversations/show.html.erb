@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<div class="panel panel-default">
+  <div class="panel-heading"><%= @conversation.subject %></div>
+ 
+  <div class="panel-body">
+    <div class="messages">
+      <% @conversation.receipts_for(current_user).reverse.each do |receipt| %>
+        <% message = receipt.message %>
+ 
+        <%= message.sender.name %>
+          at <%= message.created_at.strftime("%H:%M:%S") %>
+        <%= message.body %>
+        <br>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<%= form_tag reply_conversation_path(@conversation), method: :post do %>
+  <div class="form-group">
+    <%= text_area_tag 'body', nil, cols: 3, class: 'form-control', placeholder: 'Type something...', required: true %>
+  </div>
+  <%= submit_tag "Send Message", class: 'btn btn-primary' %>
+<% end %>
