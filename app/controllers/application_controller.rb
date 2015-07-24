@@ -10,7 +10,7 @@ class ApplicationController < ActionController::Base
 #  	end
   protect_from_forgery with: :exception
   	rescue_from ActiveRecord::RecordNotFound do
-		flash[:warning] = 'Resource not found.'
+	  #flash[:warning] = 'Resource not found.'
 	  	redirect_back_or root_path
 	end
 	 
