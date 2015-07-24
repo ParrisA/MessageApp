@@ -8,11 +8,13 @@ class ApplicationController < ActionController::Base
 #  	def after_sign_in_path_for(user)
 #  		users_path
 #  	end
+  =begin
   protect_from_forgery with: :exception
   	rescue_from ActiveRecord::RecordNotFound do
 	  #flash[:warning] = 'Resource not found.'
 	  	redirect_back_or root_path
 	end
+  =end
 	 
 	def redirect_back_or(path)
 	  	redirect_to request.referer || path
