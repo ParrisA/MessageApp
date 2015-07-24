@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   resources :messages, only: [:new, :create]
-  match "/my_new_page_url", to: "statics#my_new_page_url", via: :get
+  #match "/my_new_page_url", to: "statics#my_new_page_url", via: :get
   devise_for :users
   resources :statics
   resources :users
